@@ -1,0 +1,184 @@
+// ---- ---- color ---- ---- //
+$color_white: #ffffff;
+$color_t_main: #181818;
+$color_t_grey: #363636;
+$color_t_info: #959595;
+$color_t_accent: #e3b873;
+$color_bg_dark: #131313;
+$color_bg_accent: #e3b873;
+$color_t_opacity: rgba(255, 255, 255, 0.3);
+:root {
+  --swiper-navigation-size: ;
+  --swiper-theme-color: #e3b873;
+}
+// ---- ---- main ---- ---- //
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+body {
+  max-width: 100%;
+  width: 100%;
+  min-width: 300px;
+  overflow-x: hidden;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: $color_t_main;
+}
+.container {
+  max-width: 1276px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+// ---- ---- Title ---- ---- //
+.title {
+  &__h1 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: $color_white;
+  }
+  &__h3 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: $color_t_accent;
+    letter-spacing: -0.07em;
+  }
+  &__h4 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: $color_white;
+    margin-bottom: 12px;
+  }
+}
+// ---- ---- menu ---- ---- //
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0 22px;
+  color: $color_white;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 15px;
+  text-transform: uppercase;
+  &__logo {
+    color: $color_t_accent;
+    margin-right: 95px;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 47px;
+  }
+  &__item {
+    &:hover {
+      color: $color_t_accent;
+    }
+  }
+  &__link {
+    &--active {
+      color: $color_t_accent;
+    }
+  }
+  &__phone {
+    margin-right: 45px;
+    margin-left: auto;
+    color: $color_t_accent;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__btn {
+    text-transform: uppercase;
+    background-color: $color_bg_accent;
+    color: $color_white;
+    padding: 13px 33px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+// ---- ---- form ---- ---- //
+.form {
+  &__lable {
+    font-size: 13px;
+    line-height: 13px;
+    color: rgba(54, 54, 54, 0.5);
+    padding-left: 5px;
+  }
+  &__input {
+    width: 100%;
+    max-width: 230px;
+    border: none;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    padding: 8px 5px;
+    background-color: transparent;
+    outline: none;
+    &--white {
+      width: 100%;
+      max-width: 100%;
+      color: $color_white;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 8px 5px;
+    }
+    &::placeholder {
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 23px;
+      color: #363636;
+    }
+    &--white::placeholder {
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 23px;
+      color: $color_white;
+    }
+  }
+  &__checkbox-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  &__checkbox {
+    accent-color: $color_bg_accent;
+    cursor: pointer;
+  }
+
+  &__btn {
+    width: 100%;
+    max-width: 200px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color_white;
+    background-color: $color_bg_accent;
+    padding: 15px 20px 9px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+// ---- ---- footer ---- ---- //
+.footer {
+  background-color: $color_t_main;
+  padding: 24px 0;
+}
