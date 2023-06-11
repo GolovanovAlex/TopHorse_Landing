@@ -28,8 +28,7 @@
 .hero {
   background-color: $color_bg_dark;
   &__wrap {
-    background-image: url(../images/bg/bg_hero2.jpg);
-    background-position: bottom center;
+    background-position: 79% 100px;
     background-repeat: no-repeat;
     background-size: contain;
   }
