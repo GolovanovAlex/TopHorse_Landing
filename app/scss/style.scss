@@ -144,6 +144,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 31px;
   }
   &__box-img {
     position: relative;
@@ -182,17 +183,30 @@
 }
 // ---- ---- special ---- ---- //
 .special {
+  padding-top: $pad_top;
   &__wrap {
-  }
-  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 66px;
   }
   &__text {
+    max-width: 580px;
+    line-height: 140%;
+    color: $color_t_main;
   }
   &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 85px;
   }
 }
 // ---- ---- type ---- ---- //
 .type {
+  padding-top: $pad_top;
   &__title {
   }
   &__wrap {
