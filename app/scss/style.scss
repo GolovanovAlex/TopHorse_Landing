@@ -93,10 +93,11 @@
 }
 // ---- ---- trait ---- ---- //
 .trait {
-  padding-top: 75px;
+  padding-top: $pad_top;
   &__wrap {
     position: relative;
     padding-bottom: 440px;
+    margin-bottom: 35px;
   }
   &__box-text {
     max-width: 480px;
@@ -127,17 +128,56 @@
     right: 0;
   }
   &__img--three {
+    max-width: 676px;
     bottom: 0;
-    left: 7px;
+    left: 4px;
   }
 }
 // ---- ---- video ---- ---- //
 .video {
+  padding-top: $pad_top;
   &__title {
+    text-align: center;
+    margin-bottom: 54px;
   }
   &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__box-img {
+    position: relative;
   }
   &__img {
+    width: 100%;
+  }
+  &__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: transform 0.3s ease;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    &:hover {
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+  }
+  &__img--1 {
+    max-width: 340px;
+  }
+  &__img--2 {
+    position: relative;
+    max-width: 484px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    &:hover {
+      & + .video__play {
+        transform: translate(-50%, -50%) scale(1.2);
+      }
+    }
+  }
+  &__img--3 {
+    max-width: 345px;
   }
 }
 // ---- ---- special ---- ---- //

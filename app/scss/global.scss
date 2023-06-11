@@ -11,6 +11,8 @@ $color_bg_accent: #583e29;
 $color_bg_border: #333333;
 
 // ---- ---- main ---- ---- //
+$pad_top: 75px;
+// ---- ---- main ---- ---- //
 html {
   width: 100%;
   max-width: 100%;
@@ -34,6 +36,9 @@ body {
 }
 .main {
   background-color: $color_bg_dark;
+}
+img {
+  object-fit: cover;
 }
 // ---- ---- title ---- ---- //
 .title {
