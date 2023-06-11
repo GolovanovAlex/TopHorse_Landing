@@ -1,11 +1,13 @@
 // ---- ---- color ---- ---- //
 $color_white: #ffffff;
 $color_t_main: #ebebeb;
+$color_t_light: #f7f7f7;
+$color_t_medium: #bdb6b0;
 $color_t_dark: #bfbfbf;
-// $color_t_info: #959595;
 $color_t_accent: #a2734a;
 $color_bg_dark: #0d0a07;
-// $color_bg_accent: #e3b873;
+$color_bg_accent: #583e29;
+$color_bg_border: #333333;
 
 // ---- ---- main ---- ---- //
 html {
@@ -25,31 +27,72 @@ body {
   font-weight: 400;
 }
 .container {
-  max-width: 1276px;
+  max-width: 1200px;
   padding: 0 10px;
   margin: 0 auto;
 }
 // ---- ---- title ---- ---- //
 .title {
   &__h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 72px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1;
+    color: $color_t_accent;
+    margin-bottom: 28px;
+    span {
+      font-style: normal;
+    }
   }
   &__h3 {
   }
 }
 // ---- ---- menu ---- ---- //
 .logo {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 25px;
+  color: $color_white;
 }
 .menu {
   &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
   }
   &__item {
+    line-height: 18px;
+    color: $color_white;
   }
   &__link {
+    &:hover {
+      color: $color_t_accent;
+    }
   }
   &__link--arrow {
+    color: $color_t_accent;
+    img {
+      padding-left: 10px;
+      transition: transform 0.3s ease;
+    }
+    &:hover {
+      img {
+        transform: translateX(10px);
+      }
+    }
   }
 }
 .btn {
+  padding: 15px 30px;
+  color: $color_white;
+  border: 1px solid $color_bg_accent;
+  transition: transform 0.3s ease;
+  &:hover {
+    color: $color_t_accent;
+    transform: translateY(1px);
+  }
 }
 
 // ---- ---- footer ---- ---- //

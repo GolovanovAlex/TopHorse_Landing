@@ -7,7 +7,15 @@
 @import 'global.scss';
 // ---- ---- header ---- ---- //
 .header {
+  padding: 15px 0 0;
+  background-color: $color_bg_dark;
   &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid $color_bg_border;
+    padding: 0 0 15px 0;
   }
   &__logo {
   }
@@ -18,29 +26,80 @@
 }
 // ---- ---- hero ---- ---- //
 .hero {
+  background-color: $color_bg_dark;
   &__wrap {
+    background-image: url(../images/bg/bg_hero2.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   &__title {
+    padding-top: 121px;
+    text-align: center;
   }
   &__text-under-title {
+    max-width: 400px;
+    text-align: center;
+    color: $color_t_light;
+    margin: 0 auto 69px;
   }
   &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
   }
   &__left {
   }
   &__text {
+    max-width: 280px;
+    line-height: 135%;
+    color: $color_t_dark;
+    margin-bottom: 19px;
   }
   &__text--big {
+    max-width: 300px;
+    font-size: 24px;
+    color: $color_t_main;
+    margin-bottom: 84px;
+  }
+  &__text--small {
+    max-width: 250px;
+    margin-bottom: 93px;
   }
   &__link {
+    display: inline-block;
+    font-weight: 500;
+    color: $color_t_accent;
+    margin-bottom: 43px;
+    img {
+      padding-left: 10px;
+      transition: transform 0.3s ease;
+    }
+    &:hover {
+      img {
+        transform: translateX(10px);
+      }
+    }
   }
   &__right {
   }
   &__info {
+    padding-top: 75px;
+    max-width: 150px;
   }
   &__info-title {
+    color: $color_t_medium;
+    margin-bottom: 18px;
   }
   &__info-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1;
+    color: $color_white;
+    margin-bottom: 33px;
   }
 }
 
