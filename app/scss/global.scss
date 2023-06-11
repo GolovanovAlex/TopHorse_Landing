@@ -6,6 +6,7 @@ $color_t_medium: #bdb6b0;
 $color_t_dark: #bfbfbf;
 $color_t_accent: #a2734a;
 $color_bg_dark: #0d0a07;
+$color_bg_card: #191919;
 $color_bg_accent: #583e29;
 $color_bg_border: #333333;
 
@@ -31,6 +32,9 @@ body {
   padding: 0 10px;
   margin: 0 auto;
 }
+.main {
+  background-color: $color_bg_dark;
+}
 // ---- ---- title ---- ---- //
 .title {
   &__h1 {
@@ -46,6 +50,15 @@ body {
     }
   }
   &__h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 72px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 0.75;
+    color: $color_t_accent;
+    span {
+      font-style: normal;
+    }
   }
 }
 // ---- ---- menu ---- ---- //

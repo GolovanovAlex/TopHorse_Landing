@@ -17,12 +17,6 @@
     border-bottom: 1px solid $color_bg_border;
     padding: 0 0 15px 0;
   }
-  &__logo {
-  }
-  &__menu {
-  }
-  &__btn {
-  }
 }
 // ---- ---- hero ---- ---- //
 .hero {
@@ -47,8 +41,6 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-  }
-  &__left {
   }
   &__text {
     max-width: 280px;
@@ -81,8 +73,6 @@
       }
     }
   }
-  &__right {
-  }
   &__info {
     padding-top: 75px;
     max-width: 150px;
@@ -101,24 +91,44 @@
     margin-bottom: 33px;
   }
 }
-
 // ---- ---- trait ---- ---- //
 .trait {
+  padding-top: 75px;
   &__wrap {
+    position: relative;
+    padding-bottom: 440px;
   }
   &__box-text {
+    max-width: 480px;
+    background-color: $color_bg_card;
+    padding: 51px 53px 30px 57px;
+    margin-left: 200px;
   }
   &__title {
+    margin-bottom: 34px;
   }
   &__text {
+    line-height: 21px;
+    color: $color_t_main;
+    margin-bottom: 15px;
+    span {
+      font-style: italic;
+    }
   }
   &__img {
+    position: absolute;
   }
   &__img--one {
+    top: 70px;
+    right: 15.2%;
   }
   &__img--two {
+    top: 345px;
+    right: 0;
   }
   &__img--three {
+    bottom: 0;
+    left: 7px;
   }
 }
 // ---- ---- video ---- ---- //
