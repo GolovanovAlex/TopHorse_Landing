@@ -1,16 +1,12 @@
 // ---- ---- color ---- ---- //
 $color_white: #ffffff;
-$color_t_main: #181818;
-$color_t_grey: #363636;
-$color_t_info: #959595;
-$color_t_accent: #e3b873;
-$color_bg_dark: #131313;
-$color_bg_accent: #e3b873;
-$color_t_opacity: rgba(255, 255, 255, 0.3);
-:root {
-  --swiper-navigation-size: ;
-  --swiper-theme-color: #e3b873;
-}
+$color_t_main: #ebebeb;
+$color_t_dark: #bfbfbf;
+// $color_t_info: #959595;
+$color_t_accent: #a2734a;
+$color_bg_dark: #0d0a07;
+// $color_bg_accent: #e3b873;
+
 // ---- ---- main ---- ---- //
 html {
   width: 100%;
@@ -25,7 +21,6 @@ body {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: $color_t_main;
 }
 .container {
   max-width: 1276px;
