@@ -247,6 +247,16 @@
 // ---- ---- bigtext ---- ---- //
 .bigtext {
   padding-top: $pad_top;
+  &__wrap {
+    position: relative;
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
   &__text {
     font-family: 'Cormorant Garamond';
     font-weight: 400;
@@ -255,12 +265,29 @@
     text-align: center;
     text-transform: uppercase;
     color: $color_white;
+    white-space: nowrap;
+    z-index: 2;
+  }
+  &__text--zindex {
+    z-index: 4;
   }
   &__img {
+    position: absolute;
+  }
+  &__img--one {
+    left: 18%;
+    bottom: 0;
+    z-index: 3;
+  }
+  &__img--two {
+    top: 0;
+    left: 50%;
+    z-index: 1;
   }
 }
 // ---- ---- history ---- ---- //
 .history {
+  padding-top: $pad_top;
   &__wrap {
   }
   &__info {
