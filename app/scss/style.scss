@@ -208,21 +208,53 @@
 .type {
   padding-top: $pad_top;
   &__title {
+    text-align: center;
+    margin-bottom: 72px;
   }
   &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 45px;
   }
   &__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 260px;
+    padding-bottom: 25px;
+    &:nth-child(even) {
+      padding-top: 150px;
+    }
   }
   &__img {
+    display: flex;
+    width: 100%;
+    margin-bottom: 8px;
   }
   &__title-item {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    line-height: 135%;
+    font-weight: 500;
+    color: $color_t_light;
+    margin-bottom: 5px;
   }
   &__text {
+    line-height: 20px;
+    color: $color_t_light2;
   }
 }
 // ---- ---- bigtext ---- ---- //
 .bigtext {
+  padding-top: $pad_top;
   &__text {
+    font-family: 'Cormorant Garamond';
+    font-weight: 400;
+    font-size: 144px;
+    line-height: 194px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color_white;
   }
   &__img {
   }
