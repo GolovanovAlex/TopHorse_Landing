@@ -116,11 +116,12 @@ img {
 
 // ---- ---- footer ---- ---- //
 .footer {
-  padding: 15px 0;
   &__wrap {
+    padding: 15px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-top: 1px solid $color_bg_border;
   }
   &__logo {
     color: $color_t_accent;
