@@ -1,6 +1,9 @@
 // ---- ---- media ---- ---- //
 @media (max-width: 1200px) {
   .trait {
+    &__wrap {
+      padding-bottom: 0;
+    }
     &__wrap-box {
       display: flex;
       align-items: flex-start;
@@ -28,22 +31,9 @@
 }
 @media (max-width: 790px) {
   .trait {
-    &__wrap-box {
-      display: flex;
-      align-items: flex-start;
-    }
     &__box-text {
-      margin-left: 0;
-    }
-    &__img {
-      position: static;
-    }
-    &__img--two {
-      margin-top: -40px;
-    }
-    &__img--three {
-      display: block;
-      margin: 0 auto;
+      max-width: 350px;
+      padding: 25px 26px 15px 27px;
     }
   }
 }
@@ -71,6 +61,9 @@
   }
   .title__h1 {
     padding-top: 75px;
+    font-size: $font_size_title;
+  }
+  .title__h3 {
     font-size: $font_size_title;
   }
   .hero {
