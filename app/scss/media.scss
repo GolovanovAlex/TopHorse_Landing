@@ -35,6 +35,9 @@
       max-width: 350px;
       padding: 25px 26px 15px 27px;
     }
+    &__wrap-box {
+      align-items: center;
+    }
   }
 }
 @media (max-width: 650px) {
@@ -80,6 +83,7 @@
     }
   }
 }
+
 @media (max-width: 450px) {
   .header__wrap {
     flex-wrap: wrap;
