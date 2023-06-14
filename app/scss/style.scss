@@ -74,7 +74,7 @@
     }
   }
   &__info {
-    padding-top: 75px;
+    padding-top: $pad_top;
     max-width: 150px;
   }
   &__info-title {
@@ -258,15 +258,29 @@
     margin-bottom: 15px;
   }
   &__text {
-    font-family: 'Cormorant Garamond';
+    display: flex;
+    width: calc(100% + 400px);
+    left: -400px;
+    font-family: 'Cormorant Garamond', serif;
     font-weight: 400;
     font-size: 144px;
     line-height: 194px;
-    text-align: center;
     text-transform: uppercase;
     color: $color_white;
     white-space: nowrap;
     z-index: 2;
+    animation: textanimation 180s linear infinite;
+    animation-delay: -60s;
+    & div {
+      letter-spacing: 0.2em;
+      white-space: nowrap;
+      animation: textanimation 360s linear infinite;
+      animation-delay: -360s;
+    }
+    & div:nth-child(2) {
+      animation: textanimation-two 360s linear infinite;
+      animation-delay: -180s;
+    }
   }
   &__text--zindex {
     z-index: 4;
@@ -285,6 +299,36 @@
     z-index: 1;
   }
 }
+
+.scroll div {
+  letter-spacing: 0.2em;
+  white-space: nowrap;
+  animation: textanimation 360s linear infinite;
+  animation-delay: -360s;
+}
+.scroll div:nth-child(2) {
+  animation: textanimation-two 360s linear infinite;
+  animation-delay: -180s;
+}
+
+@keyframes textanimation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes textanimation-two {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
 // ---- ---- history ---- ---- //
 .history {
   padding-top: $pad_top;
@@ -335,9 +379,6 @@
   &__sub-number {
     text-align: right;
     color: $color_white;
-  }
-
-  &__img {
   }
 }
 // ---- ---- media ---- ---- //
