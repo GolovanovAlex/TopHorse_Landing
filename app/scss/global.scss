@@ -234,3 +234,7 @@ img {
     color: $color_white;
   }
 }
+@media (max-width: 650px) {
+  $font_size_title: 22px;
+  $color_bg_dark: red !default;
+}
