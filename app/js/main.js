@@ -1,25 +1,22 @@
-const swiper = new Swiper('.projects__swiper-text', {
-  slidesPerView: 3,
-  freeMode: true,
-  watchSlidesProgress: true,
+// ---- ---- ---- ---- ---- //
+const modal = document.querySelector('.modal'),
+  overlay = document.querySelector('.overlay'),
+  modalBtn = document.querySelector('.btn-modal'),
+  modalBtnFooter = document.querySelector('.footer__btn'),
+  yesBtn = document.querySelector('.modal__button--yes');
+
+// ---- ---- Open Modal ---- ---- //
+modalBtn.addEventListener('click', () => {
+  modal.classList.add('active');
 });
-const swiper2 = new Swiper('.projects__swiper', {
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  keyboard: true,
-  thumbs: {
-    swiper: swiper,
-  },
+modalBtnFooter.addEventListener('click', () => {
+  modal.classList.add('active');
 });
-const swiperGallery = new Swiper('.gallery-swiper', {
-  navigation: {
-    nextEl: '.swiper-button-next-gallery',
-    prevEl: '.swiper-button-prev-gallery',
-  },
+// ---- ---- Close Modal ---- ---- //
+yesBtn.addEventListener('click', () => {
+  modal.classList.remove('active');
+});
+// ---- ---- Close Modal Overlay---- ---- //
+overlay.addEventListener('click', () => {
+  modal.classList.remove('active');
 });
