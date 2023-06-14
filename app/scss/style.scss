@@ -350,6 +350,10 @@
   &__img-box {
     position: relative;
   }
+  &__img {
+    width: 100%;
+    max-width: 780px;
+  }
   &__number-box {
     display: flex;
     flex-direction: column;

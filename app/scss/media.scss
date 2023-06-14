@@ -42,6 +42,18 @@
   .type__wrap {
     gap: 15px;
   }
+  .history__wrap {
+    flex-direction: column;
+  }
+  .history__img {
+    display: block;
+    margin: 0 auto;
+  }
+  .history__title {
+    max-width: 500px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
 }
 @media (max-width: 790px) {
   .trait {
@@ -120,6 +132,9 @@
   .type {
     padding-top: $pad_top;
   }
+  .history {
+    padding-top: $pad_top;
+  }
 }
 @media (max-width: 580px) {
   .type__wrap {
@@ -144,6 +159,10 @@
       padding: 20px 10px;
     }
   }
+  .history__number {
+    font-size: 100px;
+    line-height: 35px;
+  }
 }
 @media (max-width: 450px) {
   .header__wrap {
@@ -163,10 +182,10 @@
   }
   .hero {
     &__wrap {
-      background-position: 79% 20%;
+      background-position: 79% 30%;
     }
     &__text-under-title {
-      margin-bottom: 150px;
+      margin-bottom: 180px;
     }
     &__text {
       max-width: 400px;
@@ -186,5 +205,9 @@
   }
   .video__play {
     max-width: 80px;
+  }
+  .history__number {
+    font-size: 80px;
+    line-height: 25px;
   }
 }
