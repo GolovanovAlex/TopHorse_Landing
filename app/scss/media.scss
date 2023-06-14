@@ -1,8 +1,50 @@
 // ---- ---- media ---- ---- //
+@media (max-width: 1200px) {
+  .trait {
+    &__wrap-box {
+      display: flex;
+      align-items: flex-start;
+    }
+    &__box-text {
+      margin-left: 0;
+    }
+    &__img {
+      position: static;
+    }
+    &__img--two {
+      margin-top: -40px;
+    }
+    &__img--three {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
 @media (max-width: 960px) {
   .header__wrap {
     flex-direction: column;
     gap: 20px;
+  }
+}
+@media (max-width: 790px) {
+  .trait {
+    &__wrap-box {
+      display: flex;
+      align-items: flex-start;
+    }
+    &__box-text {
+      margin-left: 0;
+    }
+    &__img {
+      position: static;
+    }
+    &__img--two {
+      margin-top: -40px;
+    }
+    &__img--three {
+      display: block;
+      margin: 0 auto;
+    }
   }
 }
 @media (max-width: 650px) {
@@ -31,19 +73,21 @@
     padding-top: 75px;
     font-size: $font_size_title;
   }
-  .hero__text {
-    font-size: 15px;
-    margin-bottom: 25px;
-    max-width: 230px;
-  }
-  .hero__info-text {
-    margin-bottom: 15px;
-  }
-  .hero__info {
-    padding-top: 25px;
+  .hero {
+    &__text {
+      font-size: 15px;
+      margin-bottom: 25px;
+      max-width: 230px;
+    }
+    &__info-text {
+      margin-bottom: 15px;
+    }
+    &__info {
+      padding-top: 25px;
+    }
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 450px) {
   .header__wrap {
     flex-wrap: wrap;
     gap: 15px;
@@ -53,7 +97,6 @@
   }
   .menu__btn {
     order: 2;
-    margin-right: 0px;
   }
 }
 @media (max-width: 440px) {
@@ -78,6 +121,9 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 15px;
+    }
+    &__link {
+      margin-bottom: 10px;
     }
   }
 }

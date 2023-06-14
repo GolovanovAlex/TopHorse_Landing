@@ -117,13 +117,16 @@
     }
   }
   &__img {
+    width: 100%;
     position: absolute;
   }
   &__img--one {
+    max-width: 321px;
     top: 70px;
     right: 15.2%;
   }
   &__img--two {
+    max-width: 501px;
     top: 345px;
     right: 0;
   }
