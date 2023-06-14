@@ -35,3 +35,10 @@ for (let anchor of anchors) {
     });
   });
 }
+// ---- ---- menubtn---- ---- //
+const menuBtn = document.querySelector('.menu__btn-box');
+const menuMain = document.querySelector('.menu');
+
+menuBtn.addEventListener('click', () => {
+  menuMain.classList.toggle('active');
+});

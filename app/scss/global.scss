@@ -10,9 +10,9 @@ $color_bg_dark: #0d0a07;
 $color_bg_card: #191919;
 $color_bg_accent: #583e29;
 $color_bg_border: #333333;
-
 // ---- ---- main ---- ---- //
 $pad_top: 75px;
+$font_size_title: 72px;
 // ---- ---- main ---- ---- //
 html {
   width: 100%;
@@ -45,7 +45,7 @@ img {
 .title {
   &__h1 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 72px;
+    font-size: $font_size_title;
     font-weight: 500;
     font-style: italic;
     line-height: 1;
@@ -57,7 +57,7 @@ img {
   }
   &__h3 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 72px;
+    font-size: $font_size_title;
     font-weight: 500;
     font-style: italic;
     line-height: 0.75;
@@ -100,6 +100,48 @@ img {
       img {
         transform: translateX(10px);
       }
+    }
+  }
+  &__btn {
+    display: none;
+    width: 40px;
+    height: 40px;
+    z-index: 20;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  &__btn-box {
+    position: relative;
+  }
+  &__btn-line {
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: $color_t_accent;
+    margin-bottom: 5px;
+    transition: all 0.5s ease;
+  }
+  &__btn-line--one {
+    top: 10px;
+  }
+  &__btn-line--two {
+    top: 20px;
+  }
+  &__btn-line--three {
+    top: 30px;
+  }
+  &.active {
+    .menu-btn__line--one {
+      top: 20px;
+      transform: rotate(45deg);
+    }
+    .menu-btn__line--two {
+      transform: scale(0.01);
+    }
+    .menu-btn__line--three {
+      top: 20px;
+      transform: rotate(-45deg);
     }
   }
 }
