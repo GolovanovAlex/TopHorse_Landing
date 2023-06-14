@@ -59,7 +59,6 @@ function build() {
       'app/favicon/**/*',
       'app/fonts/**/*',
       'app/js/main.min.js',
-      'app/js/swiper-bundle.min.js',
       'app/humans.txt',
       'app/*html',
     ],
