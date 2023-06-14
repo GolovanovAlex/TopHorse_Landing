@@ -147,6 +147,7 @@ img {
   width: 100%;
   max-width: 700px;
   padding: 20px 40px;
+  margin: 0 15px;
   background-color: $color_bg_card;
   border-radius: 16px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -167,6 +168,11 @@ img {
 }
 .modal__title {
   text-align: center;
+  margin-bottom: 45px;
+}
+.modal__text {
+  font-size: 18px;
+  line-height: 24px;
   margin-bottom: 45px;
 }
 // ---- ---- footer ---- ---- //
