@@ -149,6 +149,16 @@
       padding-top: 0px;
     }
   }
+  .footer__wrap {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .footer__btn {
+    order: 2;
+  }
+  .footer__text {
+    order: 3;
+  }
 }
 @media (max-width: 550px) {
   .trait {
