@@ -4,13 +4,16 @@ const modal = document.querySelector('.modal'),
   modalBtn = document.querySelector('.btn-modal'),
   modalBtnFooter = document.querySelector('.footer__btn'),
   yesBtn = document.querySelector('.modal__button--yes');
+const numberZIndexOff = document.querySelector('.history__number');
 
 // ---- ---- Open Modal ---- ---- //
 modalBtn.addEventListener('click', () => {
   modal.classList.add('active');
+  numberZIndexOff.classList.add('active');
 });
 modalBtnFooter.addEventListener('click', () => {
   modal.classList.add('active');
+  numberZIndexOff.classList.add('active');
 });
 // ---- ---- Close Modal ---- ---- //
 yesBtn.addEventListener('click', () => {
