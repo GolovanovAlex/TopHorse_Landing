@@ -238,6 +238,9 @@ img {
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 45px;
+  span {
+    color: $color_t_accent;
+  }
 }
 // ---- ---- footer ---- ---- //
 .footer {
