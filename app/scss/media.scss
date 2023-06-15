@@ -54,6 +54,9 @@
     margin-top: 0px;
     margin-bottom: 40px;
   }
+  .bigtext__text {
+    font-size: 100px;
+  }
 }
 @media (max-width: 790px) {
   .trait {
@@ -70,47 +73,11 @@
     justify-content: center;
     gap: 20px;
   }
-  .modal {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    pointer-events: none;
-    opacity: 0;
-    z-index: 20;
-  }
   .modal__box {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.5);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 700px;
-    padding: 20px 40px;
-    margin: 0 15px;
-    background-color: $color_bg_card;
-    border-radius: 16px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    color: $color_t_main;
-    opacity: 0;
-    transition: all 0.3s ease;
-    z-index: 50;
+    max-width: 500px;
+  }
+  .modal.active .modal__box {
+    margin: 0;
   }
 }
 @media (max-width: 650px) {
@@ -177,6 +144,16 @@
   .history {
     padding-top: $pad_top;
   }
+  .bigtext__img--one {
+    left: 10px;
+  }
+  .bigtext__img--two {
+    left: auto;
+    right: 10px;
+  }
+  .bigtext__text {
+    font-size: 88px;
+  }
 }
 @media (max-width: 580px) {
   .type__wrap {
@@ -214,6 +191,16 @@
   .history__number {
     font-size: 100px;
     line-height: 35px;
+  }
+  .modal__box {
+    max-width: 300px;
+  }
+  .modal__title {
+    font-size: 34px;
+  }
+  .modal__text {
+    font-size: 15px;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 450px) {
