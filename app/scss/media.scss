@@ -76,7 +76,7 @@
   .modal__box {
     max-width: 500px;
   }
-  .modal.active .modal__box {
+  .modal.mod-active .modal__box {
     margin: 0;
   }
 }
@@ -93,15 +93,28 @@
     }
   }
   .menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $color_bg_dark;
+    gap: 20px;
+    z-index: 20;
+    transition: transform 0.3s ease;
+    transform: translateY(-110%);
     &__btn {
       display: block;
       order: 3;
       margin-right: 20px;
     }
     &__list {
-      display: none;
-      gap: 20px;
+      flex-direction: column;
+      padding: 40px 15px;
     }
+  }
+  .menu.active {
+    transition: transform 0.3s ease;
+    transform: translateY(0%);
   }
   .title__h1 {
     padding-top: 75px;

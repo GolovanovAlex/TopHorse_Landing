@@ -5,23 +5,27 @@ const modal = document.querySelector('.modal'),
   modalBtnFooter = document.querySelector('.footer__btn'),
   yesBtn = document.querySelector('.modal__button--yes');
 const numberZIndexOff = document.querySelector('.history__number');
-
+const menuBtn = document.querySelector('.menu__btn');
 // ---- ---- Open Modal ---- ---- //
 modalBtn.addEventListener('click', () => {
-  modal.classList.add('active');
-  numberZIndexOff.classList.add('active');
+  modal.classList.add('mod-active');
+  numberZIndexOff.classList.add('mod-active');
+  menuBtn.classList.add('mod-active');
 });
 modalBtnFooter.addEventListener('click', () => {
-  modal.classList.add('active');
-  numberZIndexOff.classList.add('active');
+  modal.classList.add('mod-active');
+  numberZIndexOff.classList.add('mod-active');
+  menuBtn.classList.add('mod-active');
 });
 // ---- ---- Close Modal ---- ---- //
 yesBtn.addEventListener('click', () => {
-  modal.classList.remove('active');
+  modal.classList.remove('mod-active');
+  menuBtn.classList.remove('mod-active');
 });
 // ---- ---- Close Modal Overlay---- ---- //
 overlay.addEventListener('click', () => {
-  modal.classList.remove('active');
+  modal.classList.remove('mod-active');
+  menuBtn.classList.remove('mod-active');
 });
 
 // ---- ---- Scroll---- ---- //
@@ -39,9 +43,10 @@ for (let anchor of anchors) {
   });
 }
 // ---- ---- menubtn---- ---- //
-const menuBtn = document.querySelector('.menu__btn-box');
+
 const menuMain = document.querySelector('.menu');
 
 menuBtn.addEventListener('click', () => {
   menuMain.classList.toggle('active');
+  menuBtn.classList.toggle('active');
 });
